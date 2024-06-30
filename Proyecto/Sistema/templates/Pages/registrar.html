@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block con %}
+        <div class="contenedor_general">
+                <form action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <h1>Registro de Datos</h1>
+                        {{form}}
+                        <input type="submit" value="registrar" class="btnreg">
+                        {{mensaje}}
+                </form>
+        </div>
+{% endblock %}

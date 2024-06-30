@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block con %}
+{% for i in lis %}
+<div class="tarjeta">
+    <img src="{% static 'imgs/d.png' %}" alt="">
+    
+    <article class="lis">
+        <!-- Titulo -->
+        <h1>Codigo: {{ i.Codigo }} </h1>
+        <h3>Nombre: {{ i.Nombre }} </h3>
+        <h3>Precio: {{i.Precio}} </h3>
+        <!-- Parrafo -->
+        <p>Descripcion: {{ i.Descripcion }} </p>
+    </article>
+   
+</div>
+{% endfor %}
+{% endblock %}

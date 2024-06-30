@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    /* Alto */
+    height: 70px;
+    background: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    /* Interlineado */
+  line-height: 60px; 
+  margin-right: 10px;
+}
+
+.menu a{
+    margin-right: 5px;
+    /* Color de Fuente */
+    color:#055E68;
+    /* Quitamos linea de Decoración */
+    text-decoration: none;
+    /* Tamaño de la Fuente */
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Hover ---> Al pasar con el mouse
+realiza una accion */
+.encabezado img:hover{
+    filter: shadow(1px 1px 1px #055E68);
+}
+
+.menu a:hover{
+    border-bottom: 2px  #055E68;
+}
+
+
+.carousel-inner img{
+    /* Alto
+    1vh = 16px */
+    height: 70vh;
+}
+
+.cuerpo{
+    padding: 15px;
+}
+
+.tarjeta{
+    /* Ancho */
+    width: 980px;
+    /* Alto */
+    height: 450px;
+    /* Borde del elemento */
+    border:  dashed #343434;
+    /* Redondeo las Esquinas */
+    border-radius: 15px;
+    display: flex;
+    margin-left: 280px;
+}
+
+article{
+    padding: 15px;
+}
+
+article h1{
+    font-size: 40px;
+    color: #055E68;
+}
+
+article p{
+    line-height: 30px;
+    /* Tamaño de Fuente */
+    font-size: 20px;
+    /* Margen Superior */
+    margin-top: 20px;
+}
+
+.pie{
+    height: 100px;
+    /* Color de Fondo */
+    background: #EEEEEE;
+    display: flex;
+    /* Centro los elementos */
+    justify-content:center ;
+    
+}
+
+.pie img{
+    /* Ancho */
+    width: 30px;
+    /* Alto */
+    height: 30px;
+    margin-right: 8px;
+    /* Margen Superior */
+    margin-top: 20px;
+}
